@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+:root{
+    --blue-color: rgb(65, 166, 255);
+    --light-grey: rgb(247, 247, 247);
+    --font:  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.homePage-main-container{
+    background-color: var(--blue-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height:auto;
+    overflow:hidden ;
+    
+}
+.homePage_back{
+    height: 94.5vh;
+    width: 100%;
+    background-color: var(--blue-color);
+    position: absolute;
+    z-index: -1;
+}
+.homePage-wrapper{
+    width: 70%;
+    
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 2em;
+    padding-top: 2em;
+    
+}
+.board-feature-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 25em;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 1em;
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+    box-shadow: 0px 0px 10px 0px rgb(9, 93, 132);
+}
+/* .board-feature-container:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px 0px rgb(9, 93, 132);
+} */
+.board-img{
+   
+    width: 100%;
+    object-fit: cover;
+    object-position: top left;
+    
+    height: 100%;
+}
+.feature-details{
+    width: 100%;
+    bottom: -100%;
+    padding: 0.5em 5em;
+    background-color: white;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease,bottom 0.7s ease;
+}
+.board-feature-container:hover .feature-details{
+    opacity: 1;
+    bottom: 0;
+}
+.feature-details p {
+    font-size: 1em;
+    font-family: var(--font);
+    font-weight: 500;
+    color: gray;
+}
+.Add-Board-btn{
+    border: none;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--font);
+    font-weight: 500;
+    width: 50%;
+    transition: background-color 0.2s linear ;
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+.Add-Board-btn:hover{
+    cursor: pointer;
+    background-color: rgb(21, 152, 212);
+}

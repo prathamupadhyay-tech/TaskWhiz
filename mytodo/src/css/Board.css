@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+  
+
+
+.container{
+    width: auto;
+    height: auto;
+    background-color: rgb(65, 166, 255);
+    display: flex;
+   
+    padding-bottom: 2em;
+    align-items: flex-end;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.heading{
+    width: 100%;
+    padding: 3vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    font-size: 2.5em;
+
+}
+.wrapper{
+   
+    min-width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: thin; /* For Firefox */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+  
+  
+    padding-top: 1em;
+    padding-left: 1em;
+   
+    display: flex;
+    min-height: 80vh;
+}
+ 
+.to_do_card{
+    height: 10%;
+    
+    gap: 0.5em;
+    margin-right: 1em;
+    background-color: rgb(247, 247, 247);
+    border-radius: 0.6em;
+    display: flex;
+    box-shadow: 0px 0px 4px 0px hwb(208 11% 0%);
+    flex-direction: column;
+    padding: 0.6em;
+    position: relative;
+    
+    max-width: 25%;
+    min-width: 20%;
+}
+.card-heading-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.card-icon{
+    background-image: url("../utils/img/card1.png");
+    width: 10%;
+    margin-right: 2%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+    height: 2em;
+
+}
+.to_do_title{
+    font-size: 1.1em;
+    font-family: var(--font);
+    
+    font-weight: 500;
+    color: hwb(208 0% 22%);
+}
+.update_btns{
+    width: 80%;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.delete{
+    
+    
+    position: absolute;
+    right:-15%;
+    top: 0;
+    padding: 0.5em 1em 0.5em 1em;
+  
+    border-radius: 0.4em;
+}
+.delete_cross1{
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(169, 10, 10);
+    height: 2px;
+    transform: rotateZ(45deg);
+    width: 20px;
+}
+.delete_cross2{
+    position: absolute;
+    background-color: rgb(169, 10, 10);
+    height: 2px;
+    transform: rotateZ(-45deg);
+    width: 20px;
+}
+.to_do_description{
+    word-wrap: break-word;
+ 
+}
+.to-do-list-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 90%;
+   
+}
+.to-do-list-icon{
+    background-image: url("../utils/img/checklist.png");
+    width: 7%;
+    margin-right: 2%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+    height: 1em;
+    opacity: 0.5;
+}
+.to_do_description_div{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.3em;
+    border: 1px rgb(212, 212, 212) solid;
+    padding: 0.3em;
+    box-shadow: 0px 1px 1px 0px rgb(215, 215, 215);
+    font-size: 1.1em;
+    position: relative;
+    font-family: var(--font);
+    font-weight: 500;
+    color: rgb(103, 103, 103);
+   
+    
+}
+.list-icon{
+    background-image: url("../utils/img/threedots.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    position: absolute;
+    right: 4%;
+    top: 0.5em;
+    height: 20px;
+    opacity: 0.3;
+
+}
+.list-icon:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.list-options-div{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    font-size: 0.7em;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10em;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+    border-radius: 0.3em;
+    box-shadow: 0px 2px 4px 0px rgb(11, 35, 88);
+    height: 5em;
+    background-color: white;
+    animation: listOpener 0.4s ease forwards;
+    
+}
+
+@keyframes listOpener {
+    0%{
+        height: 0%;
+        
+        opacity: 0;
+
+    }
+    100%{
+        height: 6em;
+       
+        opacity: 1;
+    }
+    
+}
+.list-options-div>div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    padding-left: 1em;
+
+
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.list-options-div>div:hover{
+    cursor: pointer;
+    background-color: rgb(214, 214, 214);
+}
+.edit_icon_div{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    height: 30px;
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    
+    
+}
+.delete_icon_div{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    height: 30px;
+    position: absolute;
+    top: 12%;
+    right: 2%;
+}
+.delete_icon_div:hover{
+    cursor: pointer;
+    background-color: rgb(206, 206, 206);
+}
+.delete_icon{
+    width: 15px;
+    height: 15px;
+    background-image: url("../utils/img/delete.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+    
+    opacity: 0;
+}
+.edit_icon_div:hover{
+    cursor: pointer;
+    background-color: rgb(206, 206, 206);
+}
+.edit_icon{
+   
+    width: 15px;
+    height: 15px;
+    background-image: url("../utils/img/editIcon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+    
+    opacity: 0;
+}
+.to_do_description_div:hover .delete_icon{
+    
+    opacity: 1;
+}
+
+
+.to_do_description_div:hover {
+    background-color: rgb(242, 242, 242);
+   
+    
+}
+.to_do_description_div:hover .edit_icon{
+    
+    opacity: 1;
+}
+.delete:hover{
+   
+    background-color: rgb(255, 51, 0 , 0);
+    cursor: pointer;
+}
+.update{
+    padding: 0.5em 1em 0.5em 1em;
+    border: 0.15em solid  rgb(255, 166, 0);
+    background-color: rgb(255, 166, 0);
+    border-radius: 0.4em;
+}
+.update:hover{
+   
+    background-color: rgb(255, 51, 0 , 0);
+    cursor: pointer;
+}
+
+.add_card_btn{
+    padding: 0.3em;
+    width: 100%;
+    height: 40px;
+    border-radius: 0.4em;
+    border: none;
+    color: rgb(100, 100, 100);
+    background-color: rgb(255, 255, 255 , 0.6);
+    font-size: 1.5em;
+    transition: color 0.3s ease , background-color 0.3s ease;
+}
+.add_card_btn:hover{
+
+    color: rgb(43, 43, 43);
+    background-color: rgb(255, 255, 255 , 0.8);
+    cursor: pointer;
+}
+.add_card_btn_div{
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    height: 10%;
+   
+}
+.add_subcard_btn{
+    width: 100%;
+    padding: 0.3em;
+    border-radius: 0.4em;
+}
+.add_subcard_btn:hover{
+    cursor: pointer;
+    background-color: rgb(232, 232, 232);
+}
+.list_add_form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+
+}
+.list_add_form button{
+    border: none;
+    color: white;
+    padding: 0.3em;
+    font-size: 1.1em;
+    border-radius: 0.3em;
+    width: 50%;
+    background-color: rgb(0, 113, 206);
+}
+.list_add_form button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 85, 155);
+}
+.list_add_form input{
+    padding: 0.3em;
+    border-radius: 0.3em;
+    border: none;
+    font-size: 1.2em;
+}
+.task_update_btn_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}

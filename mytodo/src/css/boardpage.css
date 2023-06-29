@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+:root{
+    --blue-color: rgb(65, 166, 255);
+    --light-grey: rgb(247, 247, 247);
+    --font:  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boardpage-main-conatainer{
+    width: 100%;
+  
+  
+    display: flex;
+    justify-content: center;
+}
+
+.boardpage-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+.board-page-heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font);
+    font-size: 1.1em;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+    height: 5%;
+    padding-left: 1em;
+}
+.boards-container{
+    
+    width: 10%;
+   
+}
+.board-nav-features{
+    width: 100%;
+    height: 5%;
+    background-color:   rgb(245, 245, 245);
+}
+.boardpage-back-btn{
+    height: 5%;
+    border: none;
+    font-size: 1em;
+  
+    border-right: 1px  rgb(145, 145, 145) solid;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+.boardpage-back-btn:hover{
+ 
+    background-color: rgb(209, 209, 209);
+    cursor: pointer;
+}
+.board{
+    width: 90%;
+    background-color: var(--blue-color);
+}
+.boards-list{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+  
+    border-right: 1px  rgb(145, 145, 145) solid;
+  
+    
+    align-items: center;
+
+}
+.boards-list>div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    background-color: white;
+ 
+    font-size: 1em;
+    font-family: var(--font);
+    font-weight: 500;
+    color: rgb(97, 97, 97);
+    padding: 0.4em 0em;
+    padding-left: 1em;
+
+}
+.boards-list div:hover{
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
+.board-icon{
+    background-image: url("../utils/img/board.png");
+    width: 10%;
+    margin-right: 2%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+    height: 1.4em;
+}
+
+.boards-list div.boardSelected{
+    
+    
+    background-color: rgb(238, 238, 238);
+    
+}

@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+:root{
+    --blue-color: rgb(65, 166, 255);
+    --light-grey: rgb(247, 247, 247);
+    --font:  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home-main-container{
+    width: 100%;
+    position: relative;
+    height: 94vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-wrapper{
+    
+    width: 95%;
+    display: flex;
+    height: 80vh;
+    gap: 1em;
+   
+    
+}
+
+.home-intro-container{
+    width: 60%;
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+.home-sub-heading {
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 70%;
+    color: grey;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home-intro-container h1 span{
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--blue-color);
+    font-family: 'Montserrat', sans-serif;
+}
+.home-main-heading{
+    font-size: 6.3em;
+    width: 97%;
+    padding-bottom: 0.3em;
+    line-height: 1.1;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.home-joining-btns{
+    display: flex;
+    gap: 1em;
+    padding-top: 3em;
+}
+.Get-started{
+    font-family: 'Montserrat', sans-serif;
+    border: 0.07em var(--blue-color) solid;
+    padding: 0.7em 1.5em;
+    font-weight: 700;
+    background-color: white;
+    font-size: 1.5em;
+    border-radius: 20em;
+}
+.Get-started:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgb(220, 220, 220);
+}
+.try-for-free{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--blue-color);
+    border: none;
+    padding: 0.7em 1.5em;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-radius: 20em;
+}
+.home-feature-container{
+    
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+   
+    height: 70vh;
+}
+.first-feature-container{
+    
+    width: 100%;
+    display: grid;
+    height: 100%;
+    gap: 2em;
+    
+   
+}
+.first-feature-box-1{
+
+    grid-column-start: 1;
+     grid-column-end: 2;
+    border-radius: 1.3em;
+    background-color: rgb(211, 211, 211);
+    transition: width 0.5s ease , height 0.5s ease;   transition-delay: 0.2s;
+}
+.first-feature-box-3{
+
+   
+    border-radius: 1.3em;
+    background-color: rgb(211, 211, 211);
+    transition: width 0.5s ease , height 0.5s ease;
+    transition-delay: 0.2s;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+.first-feature-box-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 1.3em;
+    background-color: rgb(211, 211, 211);
+    transition: width 0.5s ease , height 0.5s ease;
+    transition-delay: 0.2s;
+}
+.first-feature-box-1-animate{
+    width: 0%;
+}
+.first-feature-box-2-animate{
+    width: 0%;
+
+}
+.first-feature-box-3-animate{
+    height: 0%;
+}
+.triangle1 {
+    position: absolute;
+    width: 0;
+    top: 0; 
+    left: 0;
+    z-index: -1;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 100vw solid transparent;
+    border-top: 15vw solid rgb(65, 166, 255);
+  }
+  .triangle2 {
+    position: absolute;
+    width: 0;
+    bottom: 0; 
+    left: 0;
+    z-index: -1;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 15vw solid rgb(65, 166, 255);
+  }
+.scorll-down-btn{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 100px;
+    
+    bottom: 0;
+    left: 50%;
+}
+.scorll-down-btn>div{
+   animation: scroll-btn-animation 2s ease-in-out infinite;
+    
+}
+@keyframes scroll-btn-animation {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    
+}
+.left{
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+    transform: rotate(-45deg);
+    left: 30%;
+}
+.right{
+    width: 2px;
+    position: absolute;
+    height: 50px;
+    background-color: black;
+    transform: rotate(45deg) ;
+    left: 65%;
+    
+}
+
+.home-section-2{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.triangle3{
+    position: absolute;
+    width: 0;
+    top: 0; 
+    left: 0;
+    z-index: -1;
+   
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 10vw solid rgb(65, 166, 255);
+}

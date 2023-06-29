@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+:root{
+    --blue-color: rgb(65, 166, 255);
+    --light-grey: rgb(247, 247, 247);
+    --font:  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.signin_form_container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.cross_btn_div_signin{
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    z-index: 1;
+    top: 7%;
+    right: 21%;
+}
+.cross_btn_div_signin:hover{
+    cursor: pointer;
+}
+.signin_cross1{
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    position: absolute;
+  
+    transform: translateX(15px) rotate(45deg);
+
+}
+
+.signin_cross2{
+    position: absolute;
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    transform: translateX(15px) rotate(-45deg);
+}
+.signin-back{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.34);
+}
+.signin_form_wrapper{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.signin_card_form{
+    width: 50%;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 100%;
+
+    background-color: white;
+}
+.signin_imgs{
+    width: 50%;
+    height: 100%;
+    background-image: url("../utils/img/signup-Img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.features-display-signin{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 1em;
+    padding: 0em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    backdrop-filter: saturate(180%) blur(10px);
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    left: 5%;
+    bottom: 2.5%;
+    font-family: var(--font);
+}
+.features-display-signin p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+    
+
+
+}
+.features-display-signin h2{
+    font-size: 1.4em;
+    color: rgb(124, 124, 124);
+}
+.signup_form_heading{
+    font-size: 3.0em;
+    font-family: var(--font);
+    font-weight: 700;
+
+}
+.input-divs{
+    width: 80%;
+}
+.input-divs>input{
+    width: 100%;
+    border-radius: 0.7em;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    border: none;
+    font-family: var(--font);
+    font-weight: 400;
+    padding: 0.7em;
+    /* border: 1px rgb(196, 196, 196) solid; */
+    box-shadow: 0px 0px 4px 0px rgb(213, 213, 213);
+
+}
+.input-divs>input:focus{
+    border-color: grey !important;
+}
+
+
+.signup_form_submit_btn{
+    width: 80%;
+    padding: 0.4em;
+    font-family: var(--font);
+    font-weight: 600;
+    border-radius: 0.7em;
+
+    background-color: black;
+    color: white;
+    font-size: 1.4em;
+    transition: background-color 0.2s ease , color 0.2s ease;
+    border: 1px black solid;
+}
+.signup_form_submit_btn:hover{
+    color: black;
+    cursor:  pointer;
+    background-color: rgb(255, 255, 255);
+}
+.signin-singup-p span{
+    font-weight: 700;
+
+}
+.signin-singup-p span:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+:root{
+    --blue-color: rgb(65, 166, 255);
+    --light-grey: rgb(247, 247, 247);
+    --font:  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contributer-page-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 6, 28);
+    display: flex;
+    justify-content: center;
+}
+.contributer-page-wrapper{
+    border: 1px rgba(255, 255, 255, 0.197) solid;
+    color: white;
+    width: 50%;
+    display: flex;
+    gap: 2em;
+     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 1em;
+}
+
+.contributers-card{
+    width: 95%;
+    padding: 1em;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.079);
+    border-radius: 0.6em;
+    box-shadow: 0px 0px 3px 0px rgba(188, 188, 188, 0.787);
+}
+.contributers-card:hover{
+    background-color: rgba(255, 255, 255, 0.100);
+
+}
+.contributer-avatar{
+   
+    width: 100px;
+    height: 100px;
+    border-radius: 10em;
+   
+}
+.contributers-info{
+    display: flex;
+    gap: 1em;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contributer-page-heading{
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+}
+.contributer-page-heading>h3{
+    font-size: 1.2em;
+    font-family: var(--font);
+    font-weight: 500;
+    color: var(--blue-color);
+}
+.find-contributer-btn{
+    border: 1px rgba(255, 255, 255, 0.223) solid;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.4em 1em;
+    font-weight: 500;
+    font-family: var(--font);
+    color: rgb(185, 185, 185);
+    font-size: 1.2em;
+    border-radius: 0.3em;
+}
+.find-contributer-btn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.135);
+}

@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+:root{
+    --blue-color: rgb(65, 166, 255);
+    --light-grey: rgb(247, 247, 247);
+    --font:  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.profile-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    top: 0;
+    justify-content: flex-end;
+    position: absolute;
+    overflow: hidden;
+    z-index: 4;
+}
+.proflie-cross-btn{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: rgba(255, 255, 255, 0);
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.248);
+    border-radius: 0.3em;
+
+}
+.proflie-cross-btn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.248);
+    border: 1px solid rgba(255, 255, 255, 0.248);
+}
+.profile-cross1{
+    width: 1px;
+    top: 15%;
+    background-color: rgb(255, 255, 255);
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    transform: rotate(45deg);
+}
+.profile-cross2{
+    position: absolute;
+    width: 1px;
+    top: 15%;
+    background-color: rgb(255, 255, 255);
+    height: 70%;
+    left: 50%;
+    transform: rotate(-45deg);
+}
+.profile-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 18, 30, 0.719);
+}
+.profile-options-div{
+    box-shadow: 0px 0px 4px 0px rgb(89, 124, 228);
+    border-top-left-radius: 1em;
+    overflow: hidden;
+    color: rgb(218, 231, 255);
+    z-index: 1;
+    background-color: rgb(0, 18, 33);
+   padding: 1.4em;
+   display: flex;
+   flex-direction: column;
+   gap: 0.4em;
+   padding-top: 1em;
+   padding-bottom: 1em;
+    height: 100%;
+    width: 20%;
+    border: 1px solid black;
+}
+.short-profile{
+    display: flex;
+    gap: 0.3em;
+   
+    align-items: center;
+}
+.avatar{
+    background-image: url("../utils/img/Avatar.png");
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.horizontal-line{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.293);
+    height: 1px;
+}
+.profile-options{
+    width: 100%;
+  
+    display: flex;
+
+    justify-content: flex-start;
+    
+    flex-direction: column;
+   
+}
+.profile-option-list{
+    display: flex;
+    border-radius: 0.3em;
+    padding: 0.3em 0.6em;
+    color: rgb(218, 231, 255);
+
+    justify-content: flex-start;
+    align-items: center;
+}
+.profile-option-list:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.102);
+
+}
+.logout{
+    display: flex;
+    border-radius: 0.3em;
+    padding: 0.3em 0.6em;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logout:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.102);
+
+}
